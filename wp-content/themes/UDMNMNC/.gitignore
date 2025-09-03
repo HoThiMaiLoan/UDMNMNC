@@ -1,0 +1,16 @@
+# IDE
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Node/Composer
+node_modules/
+vendor/
+*.log
+
+# WP cache
+*.zip
+*.bakgi
