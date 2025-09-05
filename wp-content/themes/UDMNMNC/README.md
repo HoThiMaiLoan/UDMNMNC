@@ -3,7 +3,7 @@
 ## Mô tả
 Theme demo tự viết cho mục tiêu học tập / project. Bao gồm:
 - Front page (slider)
-- Page templates: Blog, Contact
+- Page templates: Trang Chủ, Blog, Liên hệ
 - Custom Post Type: Project
 - Custom taxonomy: Project Categories
 - Meta box: subtitle + gallery (media uploader)
