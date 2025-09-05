@@ -1,12 +1,18 @@
 <?php get_header(); ?>
 
-<main>
-    <?php if(have_posts()): while(have_posts()): the_post(); ?>
+<section class="loop">
+  <?php
+  if(have_posts()){
+    while(have_posts()){ the_post(); ?>
+      <article <?php post_class(); ?>>
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <div><?php the_excerpt(); ?></div>
-    <?php endwhile; else: ?>
-        <p>Không có bài viết nào.</p>
-    <?php endif; ?>
-</main>
+        <div class="excerpt"><?php the_excerpt(); ?></div>
+      </article>
+    <?php }
+  } else {
+    echo '<p>'.esc_html__('Nothing found.','unmnmnc').'</p>';
+  }
+  ?>
+</section>
 
 <?php get_footer(); ?>
