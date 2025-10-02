@@ -1,0 +1,5 @@
+.udmnmnc-contact-form { max-width:600px; margin:10px auto; background:#fff7f7; padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.04); }
+.udmnmnc-contact-form input, .udmnmnc-contact-form textarea { width:100%; padding:10px; border-radius:6px; border:1px solid #ddd; margin:8px 0; }
+.udmnmnc-contact-form button { background:#e85a57; color:#fff; padding:10px 16px; border-radius:6px; border:none; cursor:pointer; }
+.udmnmnc-cf-success { background:#d4edda; color:#155724; padding:10px; border-radius:6px; margin:10px 0; }
+.udmnmnc-cf-error { background:#f8d7da; color:#721c24; padding:10px; border-radius:6px; margin:10px 0; }

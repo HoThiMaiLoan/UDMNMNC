@@ -1,18 +1,13 @@
 <?php get_header(); ?>
-
-<section class="loop">
-  <?php
-  if(have_posts()){
-    while(have_posts()){ the_post(); ?>
-      <article <?php post_class(); ?>>
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <div class="excerpt"><?php the_excerpt(); ?></div>
-      </article>
-    <?php }
-  } else {
-    echo '<p>'.esc_html__('Nothing found.','unmnmnc').'</p>';
-  }
-  ?>
+<section class="container">
+  <?php if (have_posts()): while (have_posts()): the_post(); ?>
+    <article class="post-section">
+      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <?php if (has_post_thumbnail()): the_post_thumbnail('large'); endif; ?>
+      <div class="excerpt"><?php the_excerpt(); ?></div>
+    </article>
+  <?php endwhile; the_posts_pagination(); else: ?>
+    <p>Không có bài viết.</p>
+  <?php endif; ?>
 </section>
-
 <?php get_footer(); ?>

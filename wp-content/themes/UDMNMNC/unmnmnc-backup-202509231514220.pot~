@@ -1,0 +1,101 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: UNMNMNC\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-21 21:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.0.30\n"
+"X-Domain: unmnmnc"
+
+#. Name of the template
+#: page-blog.php:2
+msgid "Blog"
+msgstr ""
+
+#: front-page.php:103
+msgid "Bài viết mới nhất"
+msgstr ""
+
+#: front-page.php:61
+msgid "Bài viết nổi bật"
+msgstr ""
+
+#: page-contact.php:27
+msgid "Bản đồ"
+msgstr ""
+
+#: front-page.php:136
+msgid "Chưa có bài viết mới."
+msgstr ""
+
+#: front-page.php:97
+msgid "Chưa có bài viết nổi bật."
+msgstr ""
+
+#: front-page.php:48
+msgid "Danh mục"
+msgstr ""
+
+#: page-contact.php:19
+msgid "Form liên hệ"
+msgstr ""
+
+#: footer.php:14
+msgid "Kết Nối"
+msgstr ""
+
+#: footer.php:8
+msgid "Liên Hệ"
+msgstr ""
+
+#. Author of the theme
+msgid "Mailoan"
+msgstr ""
+
+#: functions.php:26
+msgid "Primary Menu English"
+msgstr ""
+
+#: functions.php:25
+msgid "Primary Menu Vietnamese"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Theme UNMNMNC by Mailoan- tự viết, có CPT, templates: Trang Chủ, Blog, Liên "
+"Hệ."
+msgstr ""
+
+#: page-contact.php:12
+msgid "Thông tin liên hệ"
+msgstr ""
+
+#. Name of the template
+#: page-contact.php:2
+msgid "Trang Liên Hệ"
+msgstr ""
+
+#. Name of the theme
+msgid "UNMNMNC"
+msgstr ""
+
+#: front-page.php:84 front-page.php:123
+msgid "xem thêm"
+msgstr ""
+
+#: footer.php:23
+msgid "Yêu Hoa. All rights reserved"
+msgstr ""
+
+#: footer.php:4
+msgid "🌸 Yêu Hoa"
+msgstr ""
