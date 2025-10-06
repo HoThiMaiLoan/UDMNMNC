@@ -28,9 +28,10 @@ jobs:
       # 🧠 3. Thêm "known_hosts" để tránh lỗi xác thực SSH lần đầu
       - name: Add known_hosts
         run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-          chmod 600 ~/.ssh/known_hosts
+          mkdir -p ~/.ssh                                       # tạo thư mục .ssh nếu chưa có
+          ssh-keyscan -p "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts  # quét và thêm host VPS vào danh sách known_hosts
+          chmod 600 ~/.ssh/known_hosts                          # phân quyền an toàn cho file này
+
 
       # 📦 4. Upload themes và plugins từ GitHub sang thư mục tạm trên VPS (không cần sudo)
       - name: Upload themes & plugins to tmp
