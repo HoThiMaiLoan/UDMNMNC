@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UNMNMNC\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-03 02:35+0000\n"
+"POT-Creation-Date: 2025-09-23 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -114,8 +114,4 @@ msgstr ""
 
 #: footer.php:4
 msgid "🌸 Yêu Hoa"
-msgstr ""
-
-#: page-blog.php:9
-msgid "🌼 Hãy để hương hoa xoa dịu tâm hồn bạn."
 msgstr ""

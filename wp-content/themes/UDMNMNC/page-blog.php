@@ -6,7 +6,7 @@ get_header(); ?>
 
   <!-- Lời chào -->
   <div class="udmnmnc-blog-intro">
-    <h2><?php echo get_theme_mod('udmnmnc_blog_intro_text', _e('', 'unmnmnc')); ?></h2>
+    <h2><?php echo get_theme_mod('udmnmnc_blog_intro_text', _e('🌼 Hãy để hương hoa xoa dịu tâm hồn bạn.', 'unmnmnc')); ?></h2>
   </div>
 
   <!-- Slider ảnh tròn -->

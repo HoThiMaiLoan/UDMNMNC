@@ -27,7 +27,7 @@ Không dùng theme/plugin crack.
  Lazy load ảnh/video
 
 Hướng dẫn nhanh:
-1. Cài đặt plugin: Advanced Custom Fields (ACF), Contact Form 7.
+1. Cài đặt plugin: Advanced Custom Fields (ACF), Contact Form 7, Polylang, Smush, 
 2. Tạo Field Group (ACF, location: Options Page hoặc Front Page) với:
    - hero_title (text)
    - hero_description (textarea)
