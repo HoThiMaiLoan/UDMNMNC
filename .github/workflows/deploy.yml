@@ -42,13 +42,13 @@ jobs:
             --omit-dir-times --no-perms --no-owner --no-group \
             --exclude '.git' --exclude '.github' --exclude 'node_modules' \
             -e "ssh -p ${{ secrets.SSH_PORT }}" \
-            themes/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:$TMP_DIR/themes/
+            wp-content/themes/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:$TMP_DIR/themes/
 
           rsync -az --delete \
             --omit-dir-times --no-perms --no-owner --no-group \
             --exclude '.git' --exclude '.github' --exclude 'node_modules' \
             -e "ssh -p ${{ secrets.SSH_PORT }}" \
-            plugins/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:$TMP_DIR/plugins/
+            wp-content/plugins/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:$TMP_DIR/plugins/
 
       # ⚙️ 5. Di chuyển từ thư mục tạm sang wp-content thật
       - name: Move to WordPress directory
