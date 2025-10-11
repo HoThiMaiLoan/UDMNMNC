@@ -4,8 +4,8 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'themes/**'
-      - 'plugins/**'
+      - 'wp-content/themes/**'
+      - 'wp-content/plugins/**'
   workflow_dispatch: {}
 
 jobs:
@@ -59,21 +59,19 @@ jobs:
           TMP_DIR="$HOME/deploy_tmp"
           TARGET="${{ secrets.TARGET_DIR }}/wp-content"
 
-          # ✅ Tạo thư mục đích (nếu chưa có)
           sudo mkdir -p "$TARGET/themes" "$TARGET/plugins"
 
-          # 🚀 Rsync (copy + xóa file thừa)
           sudo rsync -a --delete "$TMP_DIR/themes/" "$TARGET/themes/"
           sudo rsync -a --delete "$TMP_DIR/plugins/" "$TARGET/plugins/"
 
-          # 🔒 Phân quyền chuẩn cho WordPress
+          # 🔒 Quyền file chuẩn cho WordPress (người chạy web là www-data)
           sudo chown -R www-data:www-data "$TARGET/themes" "$TARGET/plugins"
           sudo find "$TARGET/themes" -type d -exec chmod 755 {} \;
           sudo find "$TARGET/themes" -type f -exec chmod 644 {} \;
           sudo find "$TARGET/plugins" -type d -exec chmod 755 {} \;
           sudo find "$TARGET/plugins" -type f -exec chmod 644 {} \;
 
-          # 🔄 Reload PHP & Web Server
-          sudo systemctl reload php8.1-fpm || sudo systemctl reload php8.2-fpm || true
-          sudo systemctl reload nginx || sudo systemctl reload apache2 || true
+          # 🔄 Reload PHP-FPM & Nginx
+          sudo systemctl reload php8.2-fpm || sudo systemctl reload php8.1-fpm || true
+          sudo systemctl reload nginx || true
           EOF
